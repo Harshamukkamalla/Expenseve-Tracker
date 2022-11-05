@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  background-color: skyblue;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+
+.inc-exp-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+  width: 20%;
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+
+.inc-exp-container h4 {
+  margin: 5px 10px;
+ 
+}
+
+#money-plus {
+  color: green;
+  font-weight: bold;
+}
+
+#money-minus {
+  color: red;
+  font-weight: bold;
+}
+
+
+.underline {
+  text-align: start;
+    border-bottom: 2px solid rgb(56, 167, 36);
+    padding-bottom: 10px;
+    width: 20%;
+    background-color: whitesmoke;
+    margin: 40px 0px 10px;
+    border-radius: 5px;
+}
+
+.line {
+  text-align: start;
+  border-bottom: 2px solid rgb(56, 167, 36);
+  padding-bottom: 10px;
+  width: 20%;
+  margin: 20px 0px 0px;
+  border-radius: 5px;
+}
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 20%;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  text-align: start;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 20%;
+ border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
